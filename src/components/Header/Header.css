@@ -1,0 +1,22 @@
+.navbarLogo {
+    font-family: var(--font-display);
+    color: rgb(39, 13,11);
+    font-size: 48px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.navbarNetworkAndWallet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 48px;
+
+}

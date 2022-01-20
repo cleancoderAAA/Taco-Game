@@ -1,0 +1,60 @@
+.bakery {
+    background-color: rgb(248, 243, 236);
+    box-shadow: rgb(99, 99, 99/20%) 0px 2px 8px 0px;
+    padding: 12px;
+    border-radius: 8px;
+    overflow: hidden;
+    animation-name: floatUpAndFadeIn;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    animation-delay: 0.1s;
+}
+
+.bakery-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bakery-body {
+    display: flex;
+    flex-direction: row;
+    height: 160px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    overflow-x: auto;    
+    background: linear-gradient(to right, rgb(255, 255, 255) 10%, rgba(0, 0, 0, 0)) local, linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255) 90%) 0px 100% local, linear-gradient(to right, rgba(132, 86, 60, 0.8), rgba(0, 0, 0, 0) 10%) scroll, linear-gradient(to left, rgba(132, 86, 60, 0.8), rgba(0, 0, 0, 0) 10%) scroll;
+    background-image: linear-gradient(to right, rgb(255, 255, 255) 10%, rgba(0, 0, 0, 0)), linear-gradient(to right, rgba(0, 0, 0, 0), rgb(255, 255, 255) 90%), linear-gradient(to right, rgba(132, 86, 60, 0.8), rgba(0, 0, 0, 0) 10%), linear-gradient(to left, rgba(132, 86, 60, 0.8), rgba(0, 0, 0, 0) 10%);
+    background-position-x: initial, 0px, initial, initial;
+    background-position-y: initial, 100%, initial, initial;
+    background-size: initial, initial, initial, initial;
+    background-repeat: initial, initial, initial, initial;
+    background-attachment: local, local, scroll, scroll;
+    background-origin: initial, initial, initial, initial;
+    background-clip: initial, initial, initial, initial;
+    background-color: initial;
+}
+
+.label-bakery {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    user-select: none;
+}
+
+.btn-bakery {
+    border: none;
+    padding: 8px;
+    background-color: rgb(90, 64, 62);
+    border-radius: 8px;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+    width: 100px;
+    opacity: 0.5;
+}
